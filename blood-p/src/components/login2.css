@@ -1,0 +1,107 @@
+.log {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(rgb(166, 159, 255), rgb(214, 214, 214));
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25em;
+  height: 60vh;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 30px;
+  justify-content: center;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+}
+.input-container input {
+  height: 1.5em;
+  width: 15em;
+  border-radius: 15px;
+  border-width: 15px;
+  border: white;
+  box-shadow: 0 0 6px rgb(166, 159, 255);
+  outline: none;
+  padding: 10px;
+  font-size: 20px;
+}
+input:focus {
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset,
+    0 0 16px rgb(125, 115, 255);
+  outline: 0 none;
+}
+a {
+  color: rgb(0, 68, 255);
+  font-weight: 500;
+  margin: 5px;
+  cursor: pointer;
+  align-self: baseline;
+  margin-left: 5px;
+}
+
+.btn-l {
+  padding: 0.6rem 1.5rem;
+  background-color: rgb(166, 159, 255);
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+@media (max-width: 407px) {
+  .log {
+    align-items: center;
+    justify-content: center;
+    max-width: 80vh;
+    min-height: 40vh;
+    font-size: 15px;
+  }
+
+  .loginContainer {
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+    min-height: 40vh;
+    font-size: 15px;
+  }
+
+  .input-container {
+    justify-content: center;
+    font-size: 15px;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .input-container input {
+    padding: 5px;
+    width: 10em;
+  }
+
+  a {
+    justify-content: center;
+    font-weight: 400;
+    align-self: center;
+    margin-left: 30px;
+  }
+
+  .btn-l {
+    align-self: revert;
+  }
+}
